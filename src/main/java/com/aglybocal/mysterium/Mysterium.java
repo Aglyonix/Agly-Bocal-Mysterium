@@ -1,5 +1,6 @@
 package com.aglybocal.mysterium;
 
+import com.aglybocal.mysterium.component.MysteriumDataComponent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -37,6 +38,8 @@ public class Mysterium {
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+        MysteriumDataComponent.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
