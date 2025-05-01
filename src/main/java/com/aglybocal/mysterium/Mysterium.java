@@ -1,4 +1,4 @@
-package com.aglybocal.soulscraft;
+package com.aglybocal.mysterium;
 
 import org.slf4j.Logger;
 
@@ -17,15 +17,15 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
-@Mod(SoulsCraft.MODID)
-public class SoulsCraft {
+@Mod(Mysterium.MODID)
+public class Mysterium {
 
-    public static final String MODID = "aglysbocalsoulscraft";
+    public static final String MODID = "aglysbocalmysterium";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public SoulsCraft(IEventBus modEventBus, ModContainer modContainer)
+    public Mysterium(IEventBus modEventBus, ModContainer modContainer)
     {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

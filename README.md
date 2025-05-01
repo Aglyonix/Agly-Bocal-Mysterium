@@ -1,6 +1,6 @@
 
-Agly's & Bocal's SoulsCraft Mod
+Agly's & Bocal's Mysterium Mod
 =======
 
 ## Description
-Integrate Souls game mechanics into Minecraft, such as soul harvesting and improved tool enhancements.
+Integrate new mechanics into Minecraft that are inspired by Witch Fire (it's worth trying), such as improved tool enhancements.
