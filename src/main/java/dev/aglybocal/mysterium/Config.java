@@ -1,4 +1,4 @@
-package com.aglybocal.mysterium;
+package dev.aglybocal.mysterium;
 
 import java.util.List;
 import java.util.Set;

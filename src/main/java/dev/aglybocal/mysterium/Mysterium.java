@@ -1,6 +1,6 @@
-package com.aglybocal.mysterium;
+package dev.aglybocal.mysterium;
 
-import com.aglybocal.mysterium.component.MysteriumDataComponent;
+import dev.aglybocal.mysterium.component.MysteriumDataComponent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -21,7 +21,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 @Mod(Mysterium.MODID)
 public class Mysterium {
 
-    public static final String MODID = "aglysbocalmysterium";
+    public static final String MODID = "aglybocalmysterium";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.

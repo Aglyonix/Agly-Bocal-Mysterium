@@ -1,14 +1,12 @@
-package com.aglybocal.mysterium.component;
+package dev.aglybocal.mysterium.component;
 
-import com.aglybocal.mysterium.Mysterium;
+import dev.aglybocal.mysterium.Mysterium;
 import com.mojang.serialization.Codec;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.function.UnaryOperator;
 
 public class MysteriumDataComponent {
 

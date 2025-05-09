@@ -1,4 +1,4 @@
-package com.aglybocal.mysterium.component;
+package dev.aglybocal.mysterium.component;
 
 import io.netty.buffer.ByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
@@ -7,7 +7,7 @@ import net.minecraft.network.codec.StreamCodec;
 import java.util.Random;
 
 public record MysteriumComponent(int value) {
-    public static final MysteriumComponent DEFAULT = new MysteriumComponent(0);
+    public static final MysteriumComponent DEFAULT = new MysteriumComponent(-1);
 
     public static final StreamCodec<ByteBuf, MysteriumComponent> STREAM_CODEC = ByteBufCodecs.INT.map(MysteriumComponent::new, MysteriumComponent::value);
 
