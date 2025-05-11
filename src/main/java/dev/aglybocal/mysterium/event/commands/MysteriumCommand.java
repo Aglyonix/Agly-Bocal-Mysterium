@@ -40,7 +40,7 @@ public class MysteriumCommand {
                 return sendErrorMessage(context, "The target item is not a mysterium", -2);
             }
 
-            held.set(MysteriumDataComponent.RANDOM_VALUE.get(), MysteriumComponent.random());
+            held.set(MysteriumDataComponent.MYSTERIUM_SLOTS.get(), MysteriumComponent.random());
 
             return 0;
         } else {

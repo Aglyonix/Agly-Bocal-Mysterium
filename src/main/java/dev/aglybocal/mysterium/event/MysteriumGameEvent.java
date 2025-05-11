@@ -18,7 +18,7 @@ public class MysteriumGameEvent {
 
         BuiltInRegistries.ITEM.getTagOrEmpty(MysteriumTags.Items.MYSTERIUM_ITEMS).forEach(holder -> {
             event.modify(holder.value(), builder -> {
-                builder.set(MysteriumDataComponent.RANDOM_VALUE.get(), MysteriumComponent.DEFAULT);
+                builder.set(MysteriumDataComponent.MYSTERIUM_SLOTS.get(), MysteriumComponent.DEFAULT);
             });
         });
     }

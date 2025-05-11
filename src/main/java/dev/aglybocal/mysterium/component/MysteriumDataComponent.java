@@ -12,10 +12,10 @@ public class MysteriumDataComponent {
 
     public static final DeferredRegister<DataComponentType<?>> DATA_COMPONENT_TYPES = DeferredRegister.createDataComponents(Registries.DATA_COMPONENT_TYPE, Mysterium.MODID);
 
-    public static final DeferredHolder<DataComponentType<?>, DataComponentType<MysteriumComponent>> RANDOM_VALUE = DATA_COMPONENT_TYPES.register("random_value", () ->
-            DataComponentType.<MysteriumComponent>builder()
-                    .persistent(Codec.INT.xmap(MysteriumComponent::new, MysteriumComponent::value))
-                    .networkSynchronized(MysteriumComponent.STREAM_CODEC)
+    public static final DeferredHolder<DataComponentType<?>, DataComponentType<MysteriumSlotsComponent>> MYSTERIUM_SLOTS = DATA_COMPONENT_TYPES.register("mysterium_slots", () ->
+            DataComponentType.<MysteriumSlotsComponent>builder()
+                    .persistent(MysteriumSlotsComponent.CODEC)
+                    .networkSynchronized(MysteriumSlotsComponent.STREAM_CODEC)
                     .build());
 
     public static void register(IEventBus eventBus) {

@@ -17,9 +17,9 @@ public class MysteriumToolTips {
     public static void mysteriumTooltip(ItemTooltipEvent event) {
 
         if(event.getItemStack().is(MysteriumTags.Items.MYSTERIUM_ITEMS)) {
-            if(event.getItemStack().has(MysteriumDataComponent.RANDOM_VALUE.get())) {
+            if(event.getItemStack().has(MysteriumDataComponent.MYSTERIUM_SLOTS.get())) {
                 int value = event.getItemStack()
-                        .getOrDefault(MysteriumDataComponent.RANDOM_VALUE.get(), MysteriumComponent.DEFAULT)
+                        .getOrDefault(MysteriumDataComponent.MYSTERIUM_SLOTS.get(), MysteriumComponent.DEFAULT)
                         .value();
 
                 event.getToolTip().add(Component.literal("Valeur aléatoire : " + value));

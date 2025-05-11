@@ -16,7 +16,7 @@ public class MysteriumEvents {
     public static void onCraftedMysteriumItem(PlayerEvent.ItemCraftedEvent event) {
         if(event.getCrafting().is(MysteriumTags.Items.MYSTERIUM_ITEMS)) {
             ItemStack stack = event.getCrafting();
-            stack.set(MysteriumDataComponent.RANDOM_VALUE.get(), MysteriumComponent.random());
+            stack.set(MysteriumDataComponent.MYSTERIUM_SLOTS.get(), MysteriumComponent.random());
         }
     }
 }
